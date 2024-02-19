@@ -1,13 +1,14 @@
 {
   "expo": {
-    "scheme": "acme",
+    "name": "techHive UserTodo",
+    "slug": "techHive UserTodo",        
+    "scheme": "techHive UserTodo",
     "web": {
       "bundler": "metro"
     },
-    "plugins": [
-      "expo-router"
-    ],
-    "name": "Tech-Hive-Ui",
-    "slug": "Tech-Hive-Ui"
+    "userInterfaceStyle":"automatic",
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
