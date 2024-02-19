@@ -11,9 +11,8 @@ import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
 
 
-const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
+const Welcome = () => {
   const router = useRouter();
-  const [activeJobType, setActiveJobType] = useState("Full-time");
 
   return (
     <View >
@@ -29,12 +28,12 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
 
       <View style={styles.tabsContainer}>
         
-            <TouchableOpacity style={styles.tab(activeJobType, )}>
-              <Link style={styles.tabText(activeJobType )} href='Login'>login</Link>
+            <TouchableOpacity style={styles.tab}>
+              <Link style={styles.tabText} href='Login'>login</Link>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.tab(activeJobType, )}>
-              <Link style={styles.tabText(activeJobType )} href="Register">join our family</Link>
+            <TouchableOpacity style={styles.tab}>
+              <Link style={styles.tabText} href="Register">join our family</Link>
             </TouchableOpacity>
           
       </View>

@@ -28,19 +28,19 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  tab: (activeJobType, item) => ({
+  tab:{
     paddingVertical: SIZES.small / 2,
     marginHorizontal:SIZES.medium,
     paddingHorizontal: SIZES.small,
     borderRadius: SIZES.medium,
     borderWidth: 1,
-    borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray2,
-  }),
-  tabText: (activeJobType, item) => ({
+    borderColor: COLORS.gray2,
+  },
+  tabText:{
     marginHorizontal: SIZES.medium / 2,
     fontFamily: FONT.medium,
-    color: activeJobType === item ? COLORS.secondary : COLORS.gray2,
-  }),
+    color: COLORS.gray2,
+  }
 });
 
 export default styles;
